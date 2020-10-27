@@ -25,6 +25,7 @@ public class BasePage {
 
     }
 
+
     public  void verificationOfPage(String tab){
 
         String expectedPage = tab;
@@ -34,11 +35,6 @@ public class BasePage {
         Assert.assertEquals(expectedPage, actualPage);
 
     }
-
-
-
-
-
 
 }
 

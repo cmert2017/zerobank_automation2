@@ -32,6 +32,14 @@ public class BrowserUtils {
     }
 
 
+    public static void waitUntilVisibilityOfElement(WebElement element){
+
+        // WebDriverWait wait = new WebDriverWait(Driver.getDriver(),20);
+
+        wait.until(ExpectedConditions.visibilityOf(element));
+
+    }
+
 
 
 
@@ -54,7 +62,7 @@ public class BrowserUtils {
         element.clear();
         element.sendKeys(text);
 
-        wait.until(ExpectedConditions.attributeToBe(element, "value", text));
+        //wait.until(ExpectedConditions.attributeToBe(element, "value", text));
         System.out.println("Entering text: "+text);
     }
 

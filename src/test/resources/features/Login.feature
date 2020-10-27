@@ -11,14 +11,15 @@ Feature: As a user, i want to login so that i can see Account summary page
 
   Scenario: Login with invalid credentials
     When user enters not valid credentials
-         |username|123|
-         |user|password|
-         ||password|
-         |user||
-         |user|   |
-         |user|null|
+         |username |123         |
+         |user     |password    |
 
     Then system should display the message Login and-or password are wrong.
+    And  user should see the error header message Troubles entering the site?
 
 
 
+#  ||password|
+# |user||
+#         |user|   |
+#         |user|null|
