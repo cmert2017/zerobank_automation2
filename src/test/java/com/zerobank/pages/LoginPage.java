@@ -22,6 +22,9 @@ public class LoginPage extends BasePage{
     @FindBy(xpath="//input[@name='submit']")
     private  WebElement submitSignInBtn;
 
+    @FindBy(xpath = "//div[@class='alert alert-error']")
+    private WebElement errorMessage;
+
 
     public void login(){
 
@@ -50,5 +53,10 @@ public class LoginPage extends BasePage{
         BrowserUtils.clickOnElement(submitSignInBtn);
 
     }
+
+
+
+    public void
+
 
 }

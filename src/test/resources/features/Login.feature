@@ -10,7 +10,7 @@ Feature: As a user, i want to login so that i can see Account summary page
 
 
   Scenario: Login with invalid credentials
-    When user enters not valid credentials as "username" and "password"
+    When user enters not valid credentials
          |username|123|
          |user|password|
          ||password|

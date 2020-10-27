@@ -12,11 +12,11 @@ import org.junit.runner.RunWith;
         glue = "src/test/java/com/zerobank/step_definitions",
         plugin = "html:Target/Cucumber-report.html",
         tags = "@login_1",
-        dryRun = true
+        dryRun = false
 
 
 
 )
-public class CucumberRunner {
+public class CucumberRunner2 {
 
 }
